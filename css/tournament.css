@@ -1,0 +1,21 @@
+.tournament {
+  margin-left: 0px;
+  margin-right: auto;
+  text-align: left;
+}
+  .tournament + *{
+    clear: both;
+  }
+  .tournament > ul {
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    list-style-type: none;
+  }
+  .tournament > ul > li{
+    height: 20px;
+  }
+  .tournament > canvas {
+    margin-top: 10px;
+    float: left;
+  }

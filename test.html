@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>トーナメント動作例</title>
+  <link rel="stylesheet" type="text/css" href="css/tournament.css">
+</head>
+<body>
+  
+  <h1>トーナメント表動作例</h1>
+  
+  <div class="tournament" id="final">
+    <ul id="player-final"></ul>
+    <canvas id="canvas-final"></canvas>
+  </div>
+  
+  
+  <script src="js/tournament.js"></script>
+  <script>
+    //トーナメントの参加者数
+    var number = 20;
+    
+    //トーナメント表の高さ[px]
+    var uplength = 100;
+    
+    //トーナメントの参加者(2のべき乗個の要素を入れる。シードは空欄)(勝ち数)
+    var person = [
+      ["佐藤", 5],
+      ["", 0],
+      ["", 0],
+      ["山田", 0],
+      ["小林", 0],
+      ["渡辺", 3],
+      ["松本", 1],
+      ["林", 0],
+      ["高橋", 3],
+      ["", 0],
+      ["清水", 0],
+      ["", 0],
+      ["吉田", 0],
+      ["", 0],
+      ["中村", 2],
+      ["井上", 0],
+      ["斎藤", 0],
+      ["田中", 3],
+      ["", 0],
+      ["山口", 0],
+      ["", 0],
+      ["佐々木", 0],
+      ["", 0],
+      ["加藤", 2],
+      ["木村", 0],
+      ["鈴木", 4],
+      ["", 0],
+      ["", 0],
+      ["", 0],
+      ["山本", 0],
+      ["", 0],
+      ["伊藤", 2]
+    ];
+    
+    //トーナメント生成関数
+    tournament( number, uplength, person, "player-final", "canvas-final" );
+  </script>
+</body>
+</html>
